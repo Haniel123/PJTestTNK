@@ -1,6 +1,8 @@
 <?php
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
+use  App\Http\Controllers\DonViVanCHuyenController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -24,4 +26,6 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::get('/DataTable','DonViVanCHuyenController@index')->name('index');
+Route::get('/DataTable/getdata','DonViVanCHuyenController@getall')->name('DataTable.getdata');
 
