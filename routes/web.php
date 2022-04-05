@@ -26,6 +26,6 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/DataTable','DonViVanCHuyenController@index')->name('index');
-Route::get('/DataTable/getdata','DonViVanCHuyenController@getall')->name('DataTable.getdata');
+Route::get('/DataTable','DonViVanCHuyenController@index')->name('indexDB');
+Route::get('/DataTable/getdata','DonViVanCHuyenController@getall')->name('Getdata');
 
